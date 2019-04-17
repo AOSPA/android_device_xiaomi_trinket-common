@@ -290,6 +290,10 @@ PRODUCT_PACKAGES += \
 # Treble
 PRODUCT_FULL_TREBLE_OVERRIDE := true
 
+# USB
+PRODUCT_PACKAGES += \
+    android.hardware.usb@1.0-service
+
 # Vendor
 $(call inherit-product, vendor/xiaomi/trinket-common/trinket-common-vendor.mk)
 
