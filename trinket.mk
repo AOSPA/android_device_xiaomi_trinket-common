@@ -103,6 +103,9 @@ PRODUCT_PACKAGES += \
     libqservice \
     libtinyxml
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.sf.disable_backpressure=1
+
 # Fingerprint
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
