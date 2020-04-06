@@ -54,7 +54,6 @@ vendor.mm.enable.qcom_parser=63963135
 ro.netflix.bsp_rev=Q6125-17995-1
 
 # ParanoidDoze
-ro.sensor.proximity=true
 ro.sensor.pickup=xiaomi.sensor.pickup
 
 # OEM Unlock
