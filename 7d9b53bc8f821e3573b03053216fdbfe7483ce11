@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b3061734_9951d166",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 155,
+      "author": {
+        "id": 1000468
+      },
+      "writtenOn": "2020-07-19T14:53:40Z",
+      "side": 1,
+      "message": "instead removing, why not set a guard?",
+      "revId": "7d9b53bc8f821e3573b03053216fdbfe7483ce11",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad",
+      "unresolved": true
+    }
+  ]
+}
