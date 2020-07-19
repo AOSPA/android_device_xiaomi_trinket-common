@@ -34,6 +34,24 @@
       "revId": "7d9b53bc8f821e3573b03053216fdbfe7483ce11",
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "369978c9_abfba1e7",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 155,
+      "author": {
+        "id": 1000468
+      },
+      "writtenOn": "2020-07-19T15:08:33Z",
+      "side": 1,
+      "message": "ifneq ($(TARGET_DEVICE),laurel_sprout)\n  //   //\nendif\n\nwill be fine\nmaybe",
+      "parentUuid": "3aa17945_732f34e2",
+      "revId": "7d9b53bc8f821e3573b03053216fdbfe7483ce11",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad",
+      "unresolved": true
     }
   ]
 }
