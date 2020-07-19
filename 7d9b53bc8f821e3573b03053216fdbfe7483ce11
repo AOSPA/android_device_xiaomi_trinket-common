@@ -16,6 +16,24 @@
       "revId": "7d9b53bc8f821e3573b03053216fdbfe7483ce11",
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3aa17945_732f34e2",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 155,
+      "author": {
+        "id": 1000488
+      },
+      "writtenOn": "2020-07-19T14:54:45Z",
+      "side": 1,
+      "message": "ah good idea, thanks panda",
+      "parentUuid": "b3061734_9951d166",
+      "revId": "7d9b53bc8f821e3573b03053216fdbfe7483ce11",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad",
+      "unresolved": true
     }
   ]
 }
