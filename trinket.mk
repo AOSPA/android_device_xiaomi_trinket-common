@@ -114,6 +114,10 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl-qti \
     android.hardware.health@2.1-service
 
+# Incremental FS
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.incremental.enable=1
+
 # Initialization
 PRODUCT_PACKAGES += \
     init.qti.dcvs.sh \
