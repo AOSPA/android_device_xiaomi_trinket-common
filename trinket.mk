@@ -278,7 +278,11 @@ PRODUCT_PACKAGES += \
     libqti_vndfwk_detect.vendor
 
 # QTI Vendor Components
-TARGET_COMMON_QTI_COMPONENTS := perf av
+TARGET_COMMON_QTI_COMPONENTS := \
+    av \
+    bt \
+    gps \
+    perf
 
 # Vendor SPL
 VENDOR_SECURITY_PATCH = $(PLATFORM_SECURITY_PATCH)
