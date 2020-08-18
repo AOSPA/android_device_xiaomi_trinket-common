@@ -71,3 +71,7 @@ on property:vendor.post_boot.parsed=1
     write /sys/devices/system/cpu/cpu4/cpufreq/schedutil/up_rate_limit_us 500
     write /sys/devices/system/cpu/cpu4/cpufreq/schedutil/down_rate_limit_us 20000
     write /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq 652800
+
+    # Report max frequency to unity tasks.
+    write /proc/sys/kernel/sched_lib_name "UnityMain,libunity.so"
+    write /proc/sys/kernel/sched_lib_mask_force 255
