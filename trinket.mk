@@ -107,6 +107,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.disable_backpressure=1 \
     ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.surface_flinger.supports_background_blur=1
+
 # Fingerprint
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
