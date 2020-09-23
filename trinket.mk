@@ -75,11 +75,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.device@1.0.vendor \
     libdng_sdk.vendor
 
-# Context Hub
-PRODUCT_PACKAGES += \
-    android.hardware.contexthub@1.0-impl.generic \
-    android.hardware.contexthub@1.0-service
-
 # CNE
 PRODUCT_PACKAGES += \
     cneapiclient \
@@ -123,9 +118,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     android.hardware.broadcastradio@1.0-impl
-
-PRODUCT_BOOT_JARS += \
-    qcom.fmradio
 
 # GPS
 PRODUCT_PACKAGES += \
@@ -267,11 +259,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/vndk/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
-# QMI
-PRODUCT_PACKAGES += \
-    libjson \
-    libqti_vndfwk_detect.vendor
-
 # QTI Vendor Components
 TARGET_COMMON_QTI_COMPONENTS := \
     av \
@@ -315,15 +302,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
 
-# Recovery
-PRODUCT_PACKAGES += \
-    librecovery_updater_xiaomi
-
 # RIL
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.4 \
     android.hardware.radio.config@1.1 \
     android.hardware.secure_element@1.0 \
+    libjson \
     librmnetctl \
     libxml2 \
     libprotobuf-cpp-full
@@ -351,10 +335,6 @@ PRODUCT_PACKAGES += \
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service
-
-# Wallpapers
-PRODUCT_PACKAGES += \
-    PixelLiveWallpaperPrebuilt
 
 # Wifi
 PRODUCT_PACKAGES += \
