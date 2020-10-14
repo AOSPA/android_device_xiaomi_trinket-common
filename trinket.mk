@@ -146,6 +146,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_SOONG_NAMESPACES += \
     device/xiaomi/trinket-common
 
+# Netflix
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.netflix.bsp_rev=Q6125-17995-1
+
 # Overlays
 PRODUCT_PACKAGES += \
     FrameworksResTarget
