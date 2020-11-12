@@ -40,6 +40,11 @@ TARGET_KERNEL_VERSION := 4.14
 PRODUCT_SOONG_NAMESPACES += \
     device/xiaomi/laurel_sprout
 
+# Overlays
+PRODUCT_PACKAGES += \
+    LaurelFrameworks \
+    LaurelSystemUI
+
 # Platform
 TARGET_BOARD_PLATFORM := trinket
 
