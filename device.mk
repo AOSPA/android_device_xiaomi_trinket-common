@@ -40,6 +40,12 @@ TARGET_KERNEL_VERSION := 4.14
 PRODUCT_SOONG_NAMESPACES += \
     device/xiaomi/laurel_sprout
 
+# Platform
+TARGET_BOARD_PLATFORM := trinket
+
+# QTI
+TARGET_COMMON_QTI_COMPONENTS := all
+
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 28
 
