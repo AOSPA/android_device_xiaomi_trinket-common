@@ -194,8 +194,16 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.sensors.sync_request=true \
     persist.vendor.sensors.allow_non_default_discovery=true
 
+# Service Tracker
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.servicetracker@1.2.vendor
+
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 28
+
+# System Helper
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.systemhelper@1.0.vendor
 
 # Telephony
 PRODUCT_COPY_FILES += \
