@@ -64,6 +64,10 @@ PRODUCT_PACKAGES += \
     libspkrprot \
     libvolumelistener
 
+# Biometrics
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint@2.1-service
+
 # Bluetooth
 PRODUCT_PACKAGES += \
     audio.bluetooth.default \
