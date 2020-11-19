@@ -133,6 +133,12 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl-qti \
     android.hardware.health@2.1-service
 
+# Initialization
+PRODUCT_PACKAGES += \
+    fstab.qcom \
+    init.qti.dcvs.sh \
+    init.target.rc
+
 # Kernel
 KERNEL_SD_LLVM_SUPPORT := true
 TARGET_KERNEL_VERSION := 4.14
