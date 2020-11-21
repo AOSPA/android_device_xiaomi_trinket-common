@@ -144,7 +144,6 @@ PRODUCT_PACKAGES += \
     init.target.rc
 
 # Kernel
-KERNEL_SD_LLVM_SUPPORT := true
 TARGET_KERNEL_VERSION := 4.14
 
 # Keymaster
