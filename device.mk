@@ -195,10 +195,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.stepcounter.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.stepcounter.xml \
     frameworks/native/data/etc/android.hardware.sensor.stepdetector.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.stepdetector.xml
 
-PRODUCT_PACKAGES += \
-    android.hardware.sensors@2.0-service.multihal \
-    libsensorndkbridge
-
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.sensors.sync_request=true \
     persist.vendor.sensors.allow_non_default_discovery=true
