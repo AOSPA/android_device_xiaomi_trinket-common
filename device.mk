@@ -168,7 +168,19 @@ PRODUCT_PROPERTY_OVERRIDES += \
 TARGET_BOARD_PLATFORM := trinket
 
 # QTI
-TARGET_COMMON_QTI_COMPONENTS := all
+TARGET_COMMON_QTI_COMPONENTS += \
+    audio \
+    av \
+    bt \
+    display \
+    gps \
+    init \
+    overlay \
+    telephony \
+    usb \
+    vibrator \
+    wfd \
+    wlan
 
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
