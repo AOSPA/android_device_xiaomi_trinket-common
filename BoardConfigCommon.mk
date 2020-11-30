@@ -12,16 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-DEVICE_PATH := device/xiaomi/laurel_sprout
-
-# A/B
-AB_OTA_UPDATER := true
-AB_OTA_PARTITIONS := \
-    boot \
-    dtbo \
-    system \
-    vbmeta \
-    vendor
+COMMON_PATH := device/xiaomi/trinket-common
 
 # AVB
 BOARD_AVB_ENABLE := true
@@ -52,27 +43,15 @@ BOARD_SUPPORTS_OPENSOURCE_STHAL := false
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := trinket
 
-# DTB
-BOARD_INCLUDE_DTB_IN_BOOTIMG := true
-BOARD_BOOTIMG_HEADER_VERSION := 2
-BOARD_MKBOOTIMG_ARGS := --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
-
 # DTBO
 BOARD_KERNEL_SEPARATED_DTBO := true
 
-# Display
-TARGET_SCREEN_DENSITY := 320
-
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
-    $(DEVICE_PATH)/xiaomi_vendor_framework_compatibility_matrix.xml \
     vendor/qcom/opensource/core-utils/vendor_framework_compatibility_matrix.xml
 
-DEVICE_MANIFEST_FILE := \
-    $(DEVICE_PATH)/manifest.xml \
-    $(DEVICE_PATH)/xiaomi_manifest.xml
-
-DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
+DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest.xml
+DEVICE_MATRIX_FILE := $(COMMON_PATH)/compatibility_matrix.xml
 
 # Kernel
 BOARD_KERNEL_CMDLINE := \
@@ -101,8 +80,6 @@ TARGET_KERNEL_ARCH := arm64
 BOARD_BOOTIMAGE_PARTITION_SIZE := 0x04000000
 BOARD_DTBOIMG_PARTITION_SIZE := 0x0800000
 BOARD_FLASH_BLOCK_SIZE := 131072
-BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3221225472
-BOARD_VENDORIMAGE_PARTITION_SIZE := 1073741824
 
 BOARD_SYSTEMIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
@@ -112,11 +89,8 @@ TARGET_COPY_OUT_VENDOR := vendor
 ENABLE_VENDOR_RIL_SERVICE := true
 
 # Recovery
-BOARD_USES_RECOVERY_AS_BOOT := true
-TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/init/fstab.qcom
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 TARGET_USERIMAGES_USE_F2FS := true
-TARGET_NO_RECOVERY := true
 
 # VNDK
 BOARD_VNDK_VERSION := current

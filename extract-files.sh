@@ -16,7 +16,7 @@
 
 set -e
 
-DEVICE=laurel_sprout
+DEVICE=trinket-common
 VENDOR=xiaomi
 
 # Load extract utilities and do some sanity checks.

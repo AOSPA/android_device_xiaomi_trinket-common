@@ -12,23 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# A/B
-AB_OTA_POSTINSTALL_CONFIG += \
-    RUN_POSTINSTALL_system=true \
-    POSTINSTALL_PATH_system=system/bin/otapreopt_script \
-    FILESYSTEM_TYPE_system=ext4 \
-    POSTINSTALL_OPTIONAL_system=true
-
-AB_OTA_POSTINSTALL_CONFIG += \
-    RUN_POSTINSTALL_vendor=true \
-    POSTINSTALL_PATH_vendor=bin/checkpoint_gc \
-    FILESYSTEM_TYPE_vendor=ext4 \
-    POSTINSTALL_OPTIONAL_vendor=true
-
-PRODUCT_PACKAGES += \
-    checkpoint_gc \
-    otapreopt_script
-
 # APEX
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
@@ -64,10 +47,6 @@ PRODUCT_PACKAGES += \
     libspkrprot \
     libvolumelistener
 
-# Biometrics
-PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service
-
 # Bluetooth
 PRODUCT_PACKAGES += \
     audio.bluetooth.default \
@@ -87,12 +66,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.qcom.bluetooth.soc=cherokee \
     persist.vendor.qcom.bluetooth.twsp_state.enabled=false \
     ro.vendor.bluetooth.wipower=false
-
-# Boot
-PRODUCT_PACKAGES += \
-    android.hardware.boot@1.1-impl-qti.recovery \
-    android.hardware.boot@1.1-impl-qti \
-    android.hardware.boot@1.1-service
 
 # Camera
 PRODUCT_COPY_FILES += \
@@ -139,7 +112,6 @@ PRODUCT_PACKAGES += \
 
 # Initialization
 PRODUCT_PACKAGES += \
-    fstab.qcom \
     init.qti.dcvs.sh \
     init.target.rc
 
@@ -152,13 +124,11 @@ PRODUCT_COPY_FILES += \
 
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    device/xiaomi/laurel_sprout
+    device/xiaomi/trinket-common
 
 # Overlays
 PRODUCT_PACKAGES += \
-    FrameworksResTarget \
-    LaurelFrameworks \
-    LaurelSystemUI
+    FrameworksResTarget
 
 # PASR HAL
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -169,7 +139,6 @@ TARGET_BOARD_PLATFORM := trinket
 
 # QTI
 TARGET_COMMON_QTI_COMPONENTS += \
-    audio \
     av \
     bt \
     display \
@@ -196,14 +165,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Sensors
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.accelerometer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.accelerometer.xml \
-    frameworks/native/data/etc/android.hardware.sensor.ambient_temperature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.ambient_temperature.xml \
     frameworks/native/data/etc/android.hardware.sensor.barometer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.barometer.xml \
     frameworks/native/data/etc/android.hardware.sensor.compass.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.compass.xml \
     frameworks/native/data/etc/android.hardware.sensor.gyroscope.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.gyroscope.xml \
-    frameworks/native/data/etc/android.hardware.sensor.hifi_sensors.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.hifi_sensors.xml \
     frameworks/native/data/etc/android.hardware.sensor.light.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.light.xml \
     frameworks/native/data/etc/android.hardware.sensor.proximity.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.proximity.xml \
-    frameworks/native/data/etc/android.hardware.sensor.relative_humidity.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.relative_humidity.xml \
     frameworks/native/data/etc/android.hardware.sensor.stepcounter.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.stepcounter.xml \
     frameworks/native/data/etc/android.hardware.sensor.stepdetector.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.stepdetector.xml
 
@@ -235,14 +201,8 @@ PRODUCT_PACKAGES += \
 # Treble
 PRODUCT_FULL_TREBLE_OVERRIDE := true
 
-# Update Engine
-PRODUCT_PACKAGES += \
-    update_engine \
-    update_engine_sideload \
-    update_verifier
-
 # Vendor
-$(call inherit-product, vendor/xiaomi/laurel_sprout/laurel_sprout-vendor.mk)
+$(call inherit-product, vendor/xiaomi/trinket-common/trinket-common-vendor.mk)
 
 # Vibrator
 $(call inherit-product, vendor/qcom/opensource/vibrator/vibrator-vendor-product.mk)

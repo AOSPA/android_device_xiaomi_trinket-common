@@ -17,7 +17,8 @@
 
 set -e
 
-DEVICE=laurel_sprout
+DEVICE=trinket-common
+DEVICE_COMMON=trinket-common
 VENDOR=xiaomi
 
 INITIAL_COPYRIGHT_YEAR=2019
@@ -36,10 +37,10 @@ fi
 source "${HELPER}"
 
 # Initialize the helper.
-setup_vendor "${DEVICE}" "${VENDOR}" "${ROOT}"
+setup_vendor "${DEVICE}" "${VENDOR}" "${ROOT}" true
 
 # Copyright headers and guards.
-write_headers
+write_headers "ginkgo laurel_sprout"
 
 write_makefiles "${MY_DIR}/proprietary-files.txt" true
 
