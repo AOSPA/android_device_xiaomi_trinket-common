@@ -675,6 +675,7 @@ vendor/bin/irsc_util
 vendor/bin/qrtr-cfg
 vendor/bin/qrtr-lookup
 vendor/bin/qrtr-ns
+vendor/etc/sec_config
 vendor/etc/seccomp_policy/qti-systemd.policy
 vendor/lib/libidl.so
 vendor/lib/libmdmdetect.so
