@@ -414,16 +414,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         <fqname>@1.3::ICryptoFactory/wfdhdcp</fqname>
         <fqname>@1.3::IDrmFactory/wfdhdcp</fqname>
     </hal>
-    <!--eSE Powermanager-->
-    <hal format="hidl">
-        <name>vendor.qti.esepowermanager</name>
-        <transport>hwbinder</transport>
-        <version>1.1</version>
-        <interface>
-            <name>IEsePowerManager</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
  <!--ANT-->
     <hal format="hidl">
         <name>com.dsi.ant</name>
@@ -451,18 +441,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
        <interface>
            <name>IRadioConfig</name>
            <instance>default</instance>
-       </interface>
-    </hal>
-    <!--UICC secure element -->
-   <hal format="hidl">
-       <name>android.hardware.secure_element</name>
-       <transport>hwbinder</transport>
-       <version>1.2</version>
-       <interface>
-           <name>ISecureElement</name>
-           <instance>SIM1</instance>
-           <instance>SIM2</instance>
-           <instance>eSE1</instance>
        </interface>
     </hal>
     <!-- Tether Offload -->
