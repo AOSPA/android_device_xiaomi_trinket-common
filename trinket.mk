@@ -116,6 +116,9 @@ LOC_HIDL_VERSION = 4.0
 
 $(call inherit-product, hardware/qcom/gps/gps_vendor_product.mk)
 
+PRODUCT_PACKAGES += \
+    libsensorndkbridge
+
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.location.gps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.location.gps.xml
 
