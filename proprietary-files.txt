@@ -5,6 +5,7 @@ vendor/bin/adsprpcd
 vendor/bin/cdsprpcd
 vendor/bin/dspservice
 vendor/bin/loadalgo
+vendor/etc/init/vendor.qti.adsprpc-sscrpc-service.rc
 vendor/etc/init/vendor.qti.cdsprpc-service.rc
 vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc
 vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy
@@ -387,6 +388,7 @@ vendor/lib/libdpps.so
 vendor/lib/libhdr_tm.so
 vendor/lib/libmm-hdcpmgr.so
 vendor/lib/libqseed3.so
+vendor/lib/libsdedrm.so
 vendor/lib/libsdm-colormgr-algo.so
 vendor/lib/libsdm-color.so
 vendor/lib/libsdm-diag.so
@@ -406,6 +408,7 @@ vendor/lib64/libdpps.so
 vendor/lib64/libhdr_tm.so
 vendor/lib64/libmm-hdcpmgr.so
 vendor/lib64/libqseed3.so
+vendor/lib64/libsdedrm.so
 vendor/lib64/libsdm-colormgr-algo.so
 vendor/lib64/libsdm-color.so
 vendor/lib64/libsdm-diag.so
@@ -711,6 +714,7 @@ vendor/lib64/libgameoptfeature.so
 vendor/lib64/liblearningmodule.so
 vendor/lib64/libmeters.so
 vendor/lib64/libmeters-ns.so
+vendor/lib64/liblmutils-ns.so
 vendor/lib64/libperfconfig.so
 vendor/lib64/libperfgluelayer.so
 vendor/lib64/libperfioctl.so
@@ -1033,6 +1037,12 @@ vendor/lib64/librmp.so
 vendor/lib64/libqisl.so
 vendor/lib64/libtrustedapploader.so
 vendor/lib64/libtzdrmgenprov.so
+
+# Sensors
+vendor/bin/init.qcom.sensors.sh
+vendor/etc/init/init.vendor.sensors.rc
+vendor/etc/init/vendor.sensors.qti.rc
+vendor/etc/sensors/hals.conf
 
 # Soter
 vendor/bin/hw/vendor.qti.hardware.soter@1.0-service
