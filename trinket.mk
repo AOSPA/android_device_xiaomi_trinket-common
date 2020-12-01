@@ -152,6 +152,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.crypto.volume.filenames_mode="aes-256-cts" \
     ro.crypto.dm_default_key.options_format.version=2
 
+# Media
+PRODUCT_PACKAGES += \
+    libcodec2_vndk.vendor \
+    libcodec2_hidl@1.0.vendor
+
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
     device/xiaomi/trinket-common
