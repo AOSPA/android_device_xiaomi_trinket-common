@@ -12,6 +12,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Platform
+TARGET_BOARD_PLATFORM := trinket
+TRINKET := trinket
+
 # APEX
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
@@ -174,9 +178,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sensor.proximity=true \
     ro.sensor.pickup=xiaomi.sensor.pickup
-
-# Platform
-TARGET_BOARD_PLATFORM := trinket
 
 # QTI
 TARGET_COMMON_QTI_COMPONENTS += \
