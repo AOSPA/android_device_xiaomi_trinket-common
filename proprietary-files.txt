@@ -966,7 +966,6 @@ vendor/lib/libcppf.so
 vendor/lib/libhdcpsrm.so
 vendor/lib/libhdcp1prov.so
 vendor/lib/libhdcp2p2prov.so
-vendor/lib/liboemcrypto.so
 vendor/lib/libops.so
 vendor/lib/libpvr.so
 vendor/lib/librmp.so
@@ -978,7 +977,6 @@ vendor/lib64/libcpion.so
 vendor/lib64/libhdcpsrm.so
 vendor/lib64/libhdcp1prov.so
 vendor/lib64/libhdcp2p2prov.so
-vendor/lib64/liboemcrypto.so
 vendor/lib64/libops.so
 vendor/lib64/libpvr.so
 vendor/lib64/librmp.so
@@ -1067,18 +1065,11 @@ vendor/lib64/libwfdhdcpcp.so
 vendor/lib64/vendor.qti.hardware.sigma_miracast@1.0.so
 vendor/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so
 
-# Widevine - Google Pixel 5 (RD1A.201105.003.C1)
-vendor/bin/hw/android.hardware.drm@1.3-service.widevine|dee619a8a990d6aa30eecb39baee0dbbf5822faf
-vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc|c35e1a6f9a6faff19064a81e07c4be82ceaf4bb5
--vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml|ebebcf8f367641480cf7d512fc06e6ab777527be
-vendor/firmware/widevine.b00|649025d95e0fb0c0250cac23e14b6fd92362a41b
-vendor/firmware/widevine.b01|2f67063123f93cc637750fbad24bfd20eaecf418
-vendor/firmware/widevine.b02|0c08cb79fec0b4bc8d9f31dacf3866b32b603cee
-vendor/firmware/widevine.b03|b08e552e5fd421d30cb0f1779aa4d55e7ae34a88
-vendor/firmware/widevine.b04|ebf27b1e7993c834241534d07b3a0dece6767021
-vendor/firmware/widevine.b05|4a8433a0db5ce5febb9186330752e050b91c6c18
-vendor/firmware/widevine.b06|5ebdbf6e5a7c710763562c6d957d491e8cd011e8
-vendor/firmware/widevine.b07|94d9169b259fbf2fb6650a3efdb3592a5d2a2fbb
-vendor/firmware/widevine.mbn|9901248c118f23ba610a3a36955fde11ea492931
-vendor/firmware/widevine.mdt|5f76980227247bded76c390ee283457141012d0c
-vendor/lib64/libwvhidl.so|8284e0df2bc50c7b32b2d6683be9440274a556d0
+# Widevine - from ginkgo V12.0.2.0.QCOMIXM
+vendor/bin/hw/android.hardware.drm@1.2-service.widevine|031132b63b56218cbc85a48b444477c031939f03
+vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc|dee5b7838ac561a2292e89fc0c4ccd1932224215
+vendor/lib/liboemcrypto.so|9256fb73abc3be24d565e42a167feebc53b899d2
+vendor/lib/libwvhidl.so|952b6b8694b7726de29045e4f015f828850ab8ac
+vendor/lib/mediadrm/libwvdrmengine.so|bb9ab07cfed62e30bd70b0c11e7b4b9c748160c6
+vendor/lib64/liboemcrypto.so|4bc107c69108c71b53d8a04c9f4d4e3f7ece18e7
+vendor/lib64/mediadrm/libwvdrmengine.so|678f0333f1d53ad3c442ffaac24df7ff494d6e9a
