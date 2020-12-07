@@ -4,3 +4,6 @@ camera.                     u:object_r:vendor_camera_prop:s0
 vendor.camera.              u:object_r:vendor_camera_prop:s0
 ro.camera.req.fmq.size      u:object_r:vendor_ro_camera_prop:s0
 ro.camera.res.fmq.size      u:object_r:vendor_ro_camera_prop:s0
+
+# IR
+ro.lirc.dev                 u:object_r:lirc_prop:s0
