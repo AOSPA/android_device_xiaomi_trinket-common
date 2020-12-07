@@ -200,7 +200,8 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Netflix
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.netflix.bsp_rev=Q6125-17995-1
+    ro.netflix.bsp_rev=Q6125-17995-1 \
+    vendor.netflix.bsp_rev=Q6125-17995-1
 
 # Overlays
 PRODUCT_PACKAGES += \
