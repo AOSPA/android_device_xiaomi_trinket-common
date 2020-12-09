@@ -4,7 +4,6 @@
 vendor/bin/adsprpcd
 vendor/bin/cdsprpcd
 vendor/bin/dspservice
-vendor/bin/loadalgo
 vendor/etc/init/vendor.qti.adsprpc-sscrpc-service.rc
 vendor/etc/init/vendor.qti.cdsprpc-service.rc
 vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc
@@ -77,7 +76,6 @@ vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so
 
 # Audio
-vendor/bin/audioflacapp
 vendor/lib/soundfx/libshoebox.so
 vendor/lib/libAlacSwDec.so
 vendor/lib/libApeSwDec.so
@@ -98,9 +96,6 @@ vendor/lib/libdsd2pcm.so
 vendor/lib/libmulawdec.so
 vendor/lib/libstagefright_soft_qtiflacdec.so
 vendor/lib/vendor.qti.voiceprint@1.0.so
-vendor/lib64/soundfx/libqcbassboost.so
-vendor/lib64/soundfx/libqcreverb.so
-vendor/lib64/soundfx/libqcvirt.so
 vendor/lib64/soundfx/libshoebox.so
 vendor/lib64/libAlacSwDec.so
 vendor/lib64/libApeSwDec.so
@@ -240,7 +235,6 @@ vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc
 vendor/etc/charger_fstab.qti
 
 # Config Store
-vendor/bin/hw/capabilityconfigstoretest
 vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service
 vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc
 vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
@@ -248,7 +242,6 @@ vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 
 # Connection Security
 -vendor/app/ConnectionSecurityService/ConnectionSecurityService.apk;PRESIGNED
--vendor/app/SSGTelemetryService/SSGTelemetryService.apk;PRESIGNED
 -vendor/app/TrustZoneAccessService/TrustZoneAccessService.apk;PRESIGNED
 vendor/bin/ssgqmigd
 vendor/bin/ssgtzd
@@ -311,20 +304,6 @@ vendor/lib64/vendor.qti.hardware.embmssl@1.1-adapter-helper.so
 vendor/lib64/vendor.qti.hardware.embmssl@1.1.so
 vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so
 
-# Diag
-vendor/bin/PktRspTest
-vendor/bin/diag_callback_sample
-vendor/bin/diag_dci_sample
-vendor/bin/diag_klog
-vendor/bin/diag_mdlog
-vendor/bin/diag_socket_log
-vendor/bin/diag_uart_log
-vendor/bin/test_diag
-vendor/lib/libdiag.so
-vendor/lib/libdiagjni.so
-vendor/lib64/libdiag.so
-vendor/lib64/libdiagjni.so
-
 # Display
 vendor/bin/hw/vendor.display.color@1.0-service
 vendor/bin/ppd
@@ -372,7 +351,7 @@ vendor/lib64/vendor.display.color@1.4.so
 vendor/lib64/vendor.display.color@1.5.so
 vendor/lib64/vendor.display.postproc@1.0.so
 
-# FASTCV
+# FastCV
 vendor/lib/rfsa/adsp/libapps_mem_heap.so
 vendor/lib/rfsa/adsp/libdspCV_skel.so
 vendor/lib/rfsa/adsp/libfastcvadsp.so
@@ -390,20 +369,8 @@ system_ext/lib64/fm_helium.so
 system_ext/lib64/libfm-hci.so
 system_ext/lib64/vendor.qti.hardware.fm@1.0.so
 vendor/bin/fm_qsoc_patches
-vendor/bin/fmconfig
-vendor/bin/fmfactorytest
-vendor/bin/fmfactorytestserver
 vendor/etc/init/init.qti.fm.rc
 vendor/etc/init.qti.fm.sh
-
-# FTM
-vendor/bin/ftmdaemon
-vendor/bin/wdsdaemon
-vendor/etc/ftm_test_config
-vendor/etc/ftm_test_config_qrd
-vendor/etc/ftm_test_config_sm6150-tavil-snd-card
-vendor/lib/ftm_fm_lib.so
-vendor/lib64/ftm_fm_lib.so
 
 # GPS
 vendor/bin/garden_app
@@ -692,36 +659,15 @@ vendor/bin/pm-service
 vendor/lib/libperipheral_client.so
 vendor/lib64/libperipheral_client.so
 
-# Public Libraries
-vendor/etc/public.libraries.txt
-
-# QCC-TR-UI
--vendor/app/QCC-TR-UI/QCC-TR-UI.apk;PRESIGNED
-vendor/bin/qcc-trd
-
-# QCC VND HAL
-vendor/bin/hw/vendor.qti.hardware.qccvndhal@1.0-service
-vendor/etc/init/vendor.qti.hardware.qccvndhal@1.0-service.rc
-vendor/lib/hw/vendor.qti.hardware.qccvndhal@1.0-impl.so
-vendor/lib/vendor.qti.hardware.qccvndhal@1.0-halimpl.so
-vendor/lib/vendor.qti.hardware.qccvndhal@1.0.so
-vendor/lib64/hw/vendor.qti.hardware.qccvndhal@1.0-impl.so
-vendor/lib64/vendor.qti.hardware.qccvndhal@1.0-halimpl.so
-vendor/lib64/vendor.qti.hardware.qccvndhal@1.0.so
-
-# QDMA
-vendor/etc/init/init.qdmastats.rc
-vendor/lib/libqdma_file_agent.so
-vendor/lib64/libqdma_file_agent.so
-
 # QMI
-vendor/bin/qmi-framework-tests/qmi_test_mt_client_init_instance
 vendor/bin/irsc_util
 vendor/bin/qrtr-cfg
 vendor/bin/qrtr-lookup
 vendor/bin/qrtr-ns
+vendor/bin/ssr_setup
 vendor/etc/sec_config
 vendor/etc/seccomp_policy/qti-systemd.policy
+vendor/lib/libdiag.so
 vendor/lib/libidl.so
 vendor/lib/libmdmdetect.so
 vendor/lib/libqcci_legacy.so
@@ -739,6 +685,7 @@ vendor/lib/libqrtr.so
 vendor/lib/libqsocket.so
 vendor/lib/libsmemlog.so
 vendor/lib/libsystem_health_mon.so
+vendor/lib64/libdiag.so
 vendor/lib64/libidl.so
 vendor/lib64/libmdmdetect.so
 vendor/lib64/libqcci_legacy.so
@@ -935,32 +882,6 @@ vendor/lib64/libminkdescriptor.so
 vendor/lib64/libnative-api.so
 vendor/lib64/libqcbor.so
 
-# SS Restart
-vendor/bin/ssr_diag
-vendor/bin/ssr_setup
-vendor/bin/subsystem_ramdump
-vendor/lib/libsubsystem_control.so
-vendor/lib64/libsubsystem_control.so
-
-# SecureMSM (SECDISP)
-vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
-vendor/bin/secure_ui_sample_client
-vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
-vendor/lib/libSecureUILib.so
-vendor/lib/libStDrvInt.so
-vendor/lib/libsecureui_svcsock.so
-vendor/lib/libsecureui.so
-vendor/lib/libsi.so
-vendor/lib/vendor.qti.hardware.qdutils_disp@1.0.so
-vendor/lib/vendor.qti.hardware.tui_comm@1.0.so
-vendor/lib64/libSecureUILib.so
-vendor/lib64/libStDrvInt.so
-vendor/lib64/libsecureui_svcsock.so
-vendor/lib64/libsecureui.so
-vendor/lib64/libsi.so
-vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
-vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
-
 # SecureMSM
 vendor/bin/KmInstallKeybox
 vendor/bin/StoreKeybox
@@ -988,13 +909,32 @@ vendor/lib64/libqisl.so
 vendor/lib64/libtrustedapploader.so
 vendor/lib64/libtzdrmgenprov.so
 
+# SecureMSM (SECDISP)
+vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
+vendor/bin/secure_ui_sample_client
+vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
+vendor/lib/libSecureUILib.so
+vendor/lib/libStDrvInt.so
+vendor/lib/libsecureui_svcsock.so
+vendor/lib/libsecureui.so
+vendor/lib/libsi.so
+vendor/lib/vendor.qti.hardware.qdutils_disp@1.0.so
+vendor/lib/vendor.qti.hardware.tui_comm@1.0.so
+vendor/lib64/libSecureUILib.so
+vendor/lib64/libStDrvInt.so
+vendor/lib64/libsecureui_svcsock.so
+vendor/lib64/libsecureui.so
+vendor/lib64/libsi.so
+vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
+vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
+
 # Sensors
 vendor/bin/init.qcom.sensors.sh
 vendor/etc/init/init.vendor.sensors.rc
 vendor/etc/init/vendor.sensors.qti.rc
 vendor/etc/sensors/hals.conf
 
-# Soter
+# SOTER
 vendor/bin/hw/vendor.qti.hardware.soter@1.0-service
 vendor/bin/vendor.qti.hardware.soter@1.0-provision
 vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc
