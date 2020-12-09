@@ -183,7 +183,7 @@ PRODUCT_COPY_FILES += \
 
 # IRQ Balancer
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf
+    $(LOCAL_PATH)/configs/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf
 
 # Kernel
 TARGET_KERNEL_VERSION := 4.14
@@ -233,7 +233,7 @@ PRODUCT_PACKAGES += \
 
 # Public Libraries
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
+    $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
 # QTI
 TARGET_COMMON_QTI_COMPONENTS += \
