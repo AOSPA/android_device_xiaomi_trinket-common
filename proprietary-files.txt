@@ -1,4 +1,4 @@
-# Common proprietary files - from LA.UM.9.11.r1-02200-NICOBAR.0, unless pinned
+# Common proprietary files - from LA.UM.9.11.r1-02400-NICOBAR.0, unless pinned
 
 # ADSPRPC
 vendor/bin/adsprpcd
@@ -187,8 +187,6 @@ vendor/etc/cne/wqeclient/VZW/VZW_profile3.xml
 vendor/etc/cne/wqeclient/VZW/VZW_profile4.xml
 vendor/etc/cne/wqeclient/VZW/VZW_profile5.xml
 vendor/etc/cne/wqeclient/VZW/VZW_profile6.xml
-vendor/etc/cne/profileSlm.xml
-vendor/etc/cne/slm.conf
 vendor/etc/default-permissions/com.qualcomm.qti.cne.xml
 vendor/etc/init/cnd.rc
 vendor/etc/init/mutualex.rc
@@ -309,6 +307,8 @@ vendor/lib64/libqdi.so
 vendor/lib64/libqdp.so
 vendor/lib64/vendor.qti.hardware.embmssl@1.0-adapter-helper.so
 vendor/lib64/vendor.qti.hardware.embmssl@1.0.so
+vendor/lib64/vendor.qti.hardware.embmssl@1.1-adapter-helper.so
+vendor/lib64/vendor.qti.hardware.embmssl@1.1.so
 vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so
 
 # Diag
@@ -972,7 +972,6 @@ vendor/lib/libcppf.so
 vendor/lib/libhdcpsrm.so
 vendor/lib/libhdcp1prov.so
 vendor/lib/libhdcp2p2prov.so
-vendor/lib/libops.so
 vendor/lib/libpvr.so
 vendor/lib/librmp.so
 vendor/lib/libqisl.so
@@ -983,7 +982,6 @@ vendor/lib64/libcpion.so
 vendor/lib64/libhdcpsrm.so
 vendor/lib64/libhdcp1prov.so
 vendor/lib64/libhdcp2p2prov.so
-vendor/lib64/libops.so
 vendor/lib64/libpvr.so
 vendor/lib64/librmp.so
 vendor/lib64/libqisl.so
