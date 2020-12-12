@@ -138,16 +138,8 @@ PRODUCT_COPY_FILES += \
 BOARD_HAVE_QCOM_FM := true
 
 # GPS
-BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := default
-LOC_HIDL_VERSION = 4.0
-
-$(call inherit-product, hardware/qcom/gps/gps_vendor_product.mk)
-
 PRODUCT_PACKAGES += \
     libsensorndkbridge
-
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.location.gps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.location.gps.xml
 
 # Health
 PRODUCT_PACKAGES += \
@@ -288,22 +280,12 @@ PRODUCT_SHIPPING_API_LEVEL := 28
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.systemhelper@1.0.vendor
 
-# Telephony
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.telephony.gsm.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.gsm.xml \
-    frameworks/native/data/etc/android.hardware.telephony.cdma.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.cdma.xml \
-    frameworks/native/data/etc/android.hardware.telephony.ims.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.ims.xml
-
 # Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0-service.qti
 
 # Treble
 PRODUCT_FULL_TREBLE_OVERRIDE := true
-
-# USB
-PRODUCT_PACKAGES += \
-    android.hardware.usb@1.0-service
 
 # Vendor
 $(call inherit-product, vendor/xiaomi/trinket-common/trinket-common-vendor.mk)

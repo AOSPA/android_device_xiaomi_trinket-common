@@ -57,7 +57,7 @@ DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest.xml
 DEVICE_MATRIX_FILE := $(COMMON_PATH)/compatibility_matrix.xml
 
 # GPS
-include hardware/qcom/gps/gps_vendor_board.mk
+LOC_HIDL_VERSION = 4.0
 
 # Kernel
 BOARD_KERNEL_CMDLINE := \
