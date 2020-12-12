@@ -163,7 +163,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Initialization
 PRODUCT_PACKAGES += \
     init.qti.dcvs.sh \
-    init.target.rc
+    init.target.rc \
+    init.xiaomi_trinket.rc
 
 # IR
 PRODUCT_PACKAGES += \

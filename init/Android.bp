@@ -1,3 +1,4 @@
+
 // Copyright (C) 2020 Paranoid Android
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,6 +17,13 @@ prebuilt_etc {
     name: "init.target.rc",
     src: "init.target.rc",
     sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.xiaomi_trinket.rc",
+    src: "init.xiaomi_trinket.rc",
+    sub_dir: "init",
     vendor: true,
 }
 
