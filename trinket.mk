@@ -290,6 +290,3 @@ PRODUCT_FULL_TREBLE_OVERRIDE := true
 
 # Vendor
 $(call inherit-product, vendor/xiaomi/trinket-common/trinket-common-vendor.mk)
-
-# Vibrator
-$(call inherit-product, vendor/qcom/opensource/vibrator/vibrator-vendor-product.mk)
