@@ -290,3 +290,7 @@ PRODUCT_FULL_TREBLE_OVERRIDE := true
 
 # Vendor
 $(call inherit-product, vendor/xiaomi/trinket-common/trinket-common-vendor.mk)
+
+# Wi-Fi
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
