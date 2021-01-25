@@ -261,8 +261,9 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.stepdetector.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.stepdetector.xml
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.sensors.sync_request=true \
-    persist.vendor.sensors.allow_non_default_discovery=true
+    persist.vendor.sensors.support_direct_channel=false \
+    persist.vendor.sensors.enable.rt_task=false \
+    persist.vendor.sensors.enable.bypass_worker=true
 
 # Sepolicy
 BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
