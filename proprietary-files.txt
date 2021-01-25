@@ -936,9 +936,42 @@ vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 
 # Sensors
 vendor/bin/init.qcom.sensors.sh
+vendor/bin/sensors.qti
 vendor/etc/init/init.vendor.sensors.rc
 vendor/etc/init/vendor.sensors.qti.rc
 vendor/etc/sensors/hals.conf
+vendor/lib/rfsa/adsp/libsns_device_mode_skel.so
+vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so
+vendor/lib/libsensorslog.so
+vendor/lib/libsnsapi.so
+vendor/lib/libsnsdiaglog.so
+vendor/lib/libsns_device_mode_stub.so
+vendor/lib/libsns_fastRPC_util.so
+vendor/lib/libsns_low_lat_stream_stub.so
+vendor/lib/libsns_registry_skel.so
+vendor/lib/libssc.so
+vendor/lib64/rfsa/adsp/libsns_device_mode_skel.so
+vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so
+vendor/lib64/libsensorslog.so
+vendor/lib64/libsnsapi.so
+vendor/lib64/libsnsdiaglog.so
+vendor/lib64/libsns_device_mode_stub.so
+vendor/lib64/libsns_fastRPC_util.so
+vendor/lib64/libsns_low_lat_stream_stub.so
+vendor/lib64/libsns_registry_skel.so
+vendor/lib64/libssc.so
+
+# Sensors calibration
+system_ext/framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar
+vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service
+vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc
+vendor/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml
+vendor/lib/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so
+vendor/lib/libsensorcal.so
+vendor/lib/vendor.qti.hardware.sensorscalibrate@1.0.so
+vendor/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so
+vendor/lib64/libsensorcal.so
+vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
 
 # SOTER
 vendor/bin/hw/vendor.qti.hardware.soter@1.0-service
