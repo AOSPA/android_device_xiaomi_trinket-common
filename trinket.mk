@@ -213,6 +213,10 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
     ro.sensor.proximity=true \
     ro.sensor.pickup=xiaomi.sensor.pickup
 
+# Perf
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.perf.scroll_opt=true
+
 # Public Libraries
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
